@@ -26,4 +26,4 @@ poorUser.addBalance(10000);
 const arrtyr: number[] = [1, 2, 3, 4, 5];
 
 const sqrArry = arrtyr.map((num: number): number => num * num);
-console.log(sqrArry);
+// console.log(sqrArry);
