@@ -23,7 +23,7 @@ const { name: { mName: M } } = user;// in the cod  the mName I replace wiht M  ,
 const friends = ['karim', 'Rahim', 'Atul '];
 // in js
 const myfd = friends[2];
-console.log(myfd);
+// console.log(myfd);
 
 // in ts
 const [, , t] = friends;
