@@ -23,3 +23,10 @@ const isEligible = (age: number) => {
 }
 // isEligible(18)
 
+
+// nullish coalescing operator
+const userThem = undefined;
+const theme = userThem ?? 'light ';
+console.log(theme);
+
+
