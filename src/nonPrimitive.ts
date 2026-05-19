@@ -45,3 +45,4 @@ const user: {
   lName: 'Hakim',
   age:21, // when i use number type of age theni can nto assign string value to it 
 }
+console.log(user);
