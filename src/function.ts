@@ -15,7 +15,7 @@ const arr = (n: number, n2: number): number => {
 //object in function method;
 
 const poorUser = {
-  name: 'hakim',
+  name: 'karim',
   balance: 0,
   addBalance(value: number): number {
     return this.balance + value;

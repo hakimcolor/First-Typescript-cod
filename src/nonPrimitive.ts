@@ -33,7 +33,7 @@ let nameAndRooll: [string, number] = ['hakim', 1444];
 // Reference Type :  Object
 
 const user: {
-  companyName:'hakimcolor' //fixed value of name .. if need fixed value of name then we can use literal type of string 
+  companyName:'hakimcolor' //fixed value  name .. if need fixed value of name then we can use literal type of string 
   fname: string,
   mname?: string, //optinal proparty...... 
   lName: string,
