@@ -29,3 +29,5 @@ const empl: EmployeeManager = {
   designation: 'manager',
 teamsize:10
 }
+console.log(empl);
+
