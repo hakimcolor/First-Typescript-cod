@@ -1,25 +1,24 @@
 type UserRole = 'admin' | 'editor';
 const getDashboard = (role: UserRole) => {
-  // if (role === 'admin') {
-  //   return 'admin dashbord';
-  // } else if (role === 'editor') {
-  //   return 'editor dashboard';
-  // } else {
-  //   return 'no dashobord ';
-  // }
+  if (role === 'admin') {
+    return 'admin dashbord';
+  } else if (role === 'editor') {
+    return 'editor dashboard';
+  } else {
+    return 'no dashobord ';
+  }
 };
 
-
-//intersecton type for user and user role 
+//intersecton type for user and user role
 type Employee = {
   id: number;
   name: string;
   phone: string;
-}
+};
 type manager = {
   designation: string;
   teamsize: number;
- }
+};
 
 type EmployeeManager = Employee & manager;
 const empl: EmployeeManager = {
@@ -27,7 +26,19 @@ const empl: EmployeeManager = {
   name: 'hakeim',
   phone: '222',
   designation: 'manager',
-teamsize:10
-}
+  teamsize: 10,
+};
 // console.log(empl);
 
+type Employees = {
+  id: number;
+  name: string;
+  phone?: string;
+};
+
+const emps: Employee = {
+  id: 1,
+  name: 'Hakim',
+};
+
+console.log(emps);
