@@ -41,4 +41,8 @@ const emps: Employee = {
   name: 'Hakim',
 };
 
-console.log(emps);
+// console.log(emps);
+type Answer = 'yes' | 'no';
+
+let result: Answer = 'yes';
+console.log(result);
