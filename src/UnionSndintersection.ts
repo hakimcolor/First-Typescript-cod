@@ -45,4 +45,23 @@ const emps: Employee = {
 type Answer = 'yes' | 'no';
 
 let result: Answer = 'yes';
-console.log(result);
+// console.log(result);
+interface Student {
+  id: number;
+  name: string;
+  department?: string;
+}
+
+const student1: Student = {
+  id: 101,
+  name: 'Hakim',
+};
+
+const student2: Student = {
+  id: 102,
+  name: 'Rahim',
+  department: 'CSE',
+};
+
+console.log(student1);
+console.log(student2);
