@@ -63,5 +63,17 @@ const student2: Student = {
   department: 'CSE',
 };
 
-console.log(student1);
-console.log(student2);
+// console.log(student1);
+// console.log(student2);
+
+type Status = 'success' | 'error';
+
+const showMessage = (status: Status) => {
+  if (status === 'success') {
+    return 'Operation Successful';
+  } else {
+    return 'Something went wrong';
+  }
+};
+
+console.log(showMessage('success'));
