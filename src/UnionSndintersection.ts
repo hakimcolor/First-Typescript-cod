@@ -76,4 +76,24 @@ const showMessage = (status: Status) => {
   }
 };
 
-console.log(showMessage('success'));
+// console.log(showMessage('success'));
+type Product = {
+  id: number;
+  name: string;
+  price: number;
+};
+
+const products: Product[] = [
+  {
+    id: 1,
+    name: 'Laptop',
+    price: 50000,
+  },
+  {
+    id: 2,
+    name: 'Phone',
+    price: 20000,
+  },
+];
+
+console.log(products); 
