@@ -26,4 +26,11 @@ firstNames = 100;
 let age: number = 25;
 
 age = 30;
-age = 'thirty'; 
+age = 'thirty';
+
+//fals and true chake
+let value = null;
+
+value = 'Hello';
+value = 500;
+value = true;
