@@ -1,9 +1,9 @@
 // Javascript
-// string, number , boolean, undefined ,null, 
+// string, number , boolean, undefined ,null,
 
 // Typescript
-// never, unknown, any, void, 
-let usenaem: string = 'hakim'
+// never, unknown, any, void,
+let usenaem: string = 'hakim';
 
 let userId: number = 123;
 
@@ -11,10 +11,13 @@ let userId: number = 123;
 let isAdmin = true;
 isAdmin = false;
 
-// for any type of variable we can assign any type of value to it 
+// for any type of variable we can assign any type of value to it
 let y = undefined;
 y = 'hakim';
 y = 123;
 y = true;
 
+let firstNames: string = 'John';
 
+firstNames = 'Mike';
+firstNames = 100;
