@@ -21,3 +21,9 @@ let firstNames: string = 'John';
 
 firstNames = 'Mike';
 firstNames = 100;
+
+// age
+let age: number = 25;
+
+age = 30;
+age = 'thirty'; 
