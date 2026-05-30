@@ -34,3 +34,11 @@ let value = null;
 value = 'Hello';
 value = 500;
 value = true;
+//Fix the errors in the code below:
+let productName: string = 'Laptop';
+let price: number = 1200;
+let inStock: boolean = true;
+
+productName = 'Phone';
+price = '1500';
+inStock = 'yes';
