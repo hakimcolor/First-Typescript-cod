@@ -42,3 +42,14 @@ let inStock: boolean = true;
 productName = 'Phone';
 price = '1500';
 inStock = 'yes';
+// Fix the errors in the code below:
+
+let studentName: string = 'Rahim';
+let marks: number = 85;
+let isPassed: boolean = true;
+
+studentName = 'Karim';
+marks = '90';
+isPassed = 'yes';
+
+// Find and fix the type errors
