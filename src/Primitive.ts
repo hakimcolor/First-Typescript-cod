@@ -60,3 +60,12 @@ let isPassed: boolean = true;
 studentName = 'Karim';
 marks = 90;
 isPassed = true; 
+// Fix the errors in the code below:
+
+let city: string = 'Dhaka';
+let population: number = 20000000;
+let isCapital: boolean = true;
+
+city = 100;
+population = '25000000';
+isCapital = 'true';
