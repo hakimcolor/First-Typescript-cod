@@ -53,3 +53,10 @@ marks = '90';
 isPassed = 'yes';
 
 // Find and fix the type errors
+let studentName: string = 'Rahim';
+let marks: number = 85;
+let isPassed: boolean = true;
+
+studentName = 'Karim';
+marks = 90;
+isPassed = true; 
