@@ -1,4 +1,4 @@
-//this is a object type alias 
+//this is a object type alias
 type user = {
   id: number;
   name: {
@@ -21,8 +21,7 @@ const user1: user = {
   city: 'sdlkfsd',
 };
 
-
-// function type alias 
+// function type alias
 type addFunc = (num1: number, num2: number) => number;
 const add: addFunc = (num1, num2) => num1 + num2;
 
@@ -45,15 +44,9 @@ const product1: Product = {
 };
 
 // Function Type Alias
-type DiscountFunc = (
-  price: number,
-  discount: number
-) => number;
+type DiscountFunc = (price: number, discount: number) => number;
 
-const calculateDiscount: DiscountFunc = (
-  price,
-  discount
-) => price - discount;
+const calculateDiscount: DiscountFunc = (price, discount) => price - discount;
 
 // console.log(calculateDiscount(800, 100)); // 700
 // Object Type Alias
@@ -74,14 +67,20 @@ const employee1: Employee = {
 };
 
 // Function Type Alias
-type SalaryIncrementFunc = (
-  salary: number,
-  increment: number
-) => number;
+type SalaryIncrementFunc = (salary: number, increment: number) => number;
 
-const increaseSalary: SalaryIncrementFunc = (
-  salary,
-  increment
-) => salary + increment;
+const increaseSalary: SalaryIncrementFunc = (salary, increment) =>
+  salary + increment;
 
-console.log(increaseSalary(50000, 5000)); // 55000
+// console.log(increaseSalary(50000, 5000)); // 55000
+type Student = {
+  id: number;
+  name: string;
+  isPassed: boolean;
+};
+
+const student1: Student = {
+  id: 1,
+  name: 'Hakim',
+  isPassed: true,
+};
