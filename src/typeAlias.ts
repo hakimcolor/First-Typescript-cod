@@ -95,3 +95,17 @@ const car1: Car = {
   model: 'Corolla',
   year: 2024,
 };
+
+// Union Type Alias
+type UserRole = 'admin' | 'editor' | 'user';
+
+const currentRole: UserRole = 'admin';
+
+// Function Type Alias
+type GetRoleMessage = (role: UserRole) => string;
+
+const getRoleMessage: GetRoleMessage = (role) => {
+  return `Welcome ${role}`;
+};
+
+console.log(getRoleMessage(currentRole))
