@@ -99,11 +99,11 @@ const products: Product[] = [
 ];
 
 // Output
-console.log(getDashboard('admin'));
-console.log(empl);
-console.log(emps);
-console.log(result);
-console.log(student1);
-console.log(student2);
-console.log(showMessage('success'));
-console.log(products);
+// console.log(getDashboard('admin'));
+// console.log(empl);
+// console.log(emps);
+// console.log(result);
+// console.log(student1);
+// console.log(student2);
+// console.log(showMessage('success'));
+// console.log(products);
