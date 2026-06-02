@@ -84,3 +84,14 @@ const student1: Student = {
   name: 'Hakim',
   isPassed: true,
 };
+type Car = {
+  brand: string;
+  model: string;
+  year: number;
+};
+
+const car1: Car = {
+  brand: 'Toyota',
+  model: 'Corolla',
+  year: 2024,
+};
