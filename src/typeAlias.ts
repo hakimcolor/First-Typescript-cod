@@ -108,4 +108,10 @@ const getRoleMessage: GetRoleMessage = (role) => {
   return `Welcome ${role}`;
 };
 
-console.log(getRoleMessage(currentRole))
+// console.log(getRoleMessage(currentRole))
+
+type LoginStatus = 'loggedIn' | 'loggedOut';
+
+const status: LoginStatus = 'loggedIn';
+
+console.log(status);
