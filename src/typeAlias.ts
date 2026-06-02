@@ -56,3 +56,32 @@ const calculateDiscount: DiscountFunc = (
 ) => price - discount;
 
 // console.log(calculateDiscount(800, 100)); // 700
+// Object Type Alias
+type Employee = {
+  id: number;
+  name: string;
+  department: 'HR' | 'Developer' | 'Designer';
+  salary: number;
+  isActive: boolean;
+};
+
+const employee1: Employee = {
+  id: 1,
+  name: 'Hakim',
+  department: 'Developer',
+  salary: 50000,
+  isActive: true,
+};
+
+// Function Type Alias
+type SalaryIncrementFunc = (
+  salary: number,
+  increment: number
+) => number;
+
+const increaseSalary: SalaryIncrementFunc = (
+  salary,
+  increment
+) => salary + increment;
+
+console.log(increaseSalary(50000, 5000)); // 55000
