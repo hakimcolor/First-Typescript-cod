@@ -1,51 +1,55 @@
+// Union Type
 type UserRole = 'admin' | 'editor';
-const getDashboard = (role: UserRole) => {
+
+const getDashboard = (role: UserRole): string => {
   if (role === 'admin') {
-    return 'admin dashbord';
+    return 'Admin Dashboard';
   } else if (role === 'editor') {
-    return 'editor dashboard';
-  } else {
-    return 'no dashobord ';
+    return 'Editor Dashboard';
   }
+  return 'No Dashboard';
 };
 
-//intersecton type for user and user role
+// Intersection Type
 type Employee = {
   id: number;
   name: string;
   phone: string;
 };
-type manager = {
+
+type Manager = {
   designation: string;
-  teamsize: number;
+  teamSize: number;
 };
 
-type EmployeeManager = Employee & manager;
+type EmployeeManager = Employee & Manager;
+
 const empl: EmployeeManager = {
   id: 122,
-  name: 'hakeim',
+  name: 'Hakim',
   phone: '222',
-  designation: 'manager',
-  teamsize: 10,
+  designation: 'Manager',
+  teamSize: 10,
 };
-// console.log(empl);
 
-type Employees = {
+// Optional Property Example
+type EmployeeInfo = {
   id: number;
   name: string;
   phone?: string;
 };
 
-const emps: Employee = {
+const emps: EmployeeInfo = {
   id: 1,
   name: 'Hakim',
 };
 
-// console.log(emps);
+// Union Literal Type
 type Answer = 'yes' | 'no';
 
 let result: Answer = 'yes';
-// console.log(result);
+
+// Interface
 interface Student {
   id: number;
   name: string;
@@ -63,20 +67,18 @@ const student2: Student = {
   department: 'CSE',
 };
 
-// console.log(student1);
-// console.log(student2);
-
+// Status Example
 type Status = 'success' | 'error';
 
-const showMessage = (status: Status) => {
+const showMessage = (status: Status): string => {
   if (status === 'success') {
     return 'Operation Successful';
-  } else {
-    return 'Something went wrong';
   }
+
+  return 'Something went wrong';
 };
 
-// console.log(showMessage('success'));
+// Array of Objects
 type Product = {
   id: number;
   name: string;
@@ -96,4 +98,12 @@ const products: Product[] = [
   },
 ];
 
-console.log(products); 
+// Output
+console.log(getDashboard('admin'));
+console.log(empl);
+console.log(emps);
+console.log(result);
+console.log(student1);
+console.log(student2);
+console.log(showMessage('success'));
+console.log(products);
