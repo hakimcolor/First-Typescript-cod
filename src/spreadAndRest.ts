@@ -17,3 +17,30 @@ const sendInvite = (...friend: string[]) => {
   
 }
 sendInvite('abbul', 'bulbul', 'chulbul', 'Rahim')
+
+// Spread Operator
+
+const oldCommits = ['Initial commit', 'Add login'];
+const newCommits = ['Fix bug', 'Update UI'];
+
+const allCommits = [...oldCommits, ...newCommits];
+
+console.log(allCommits);
+
+
+// Rest Operator
+
+const showCommits = (...commits: string[]) => {
+  console.log('Commit List:');
+
+  commits.forEach((commit) => {
+    console.log(commit);
+  });
+};
+
+showCommits(
+  'Initial commit',
+  'Add login',
+  'Fix bug',
+  'Update UI'
+);
