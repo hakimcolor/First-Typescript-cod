@@ -61,3 +61,20 @@ const gitCommit = (...messages: string[]) => {
 };
 
 gitCommit('Fix bug', 'Update UI', 'Add Footer'); 
+// Spread Operator
+
+const a = ['commit1'];
+const b = ['commit2'];
+
+const commits = [...a, ...b];
+
+console.log(commits);
+
+
+// Rest Operator
+
+const showCommit = (...msg: string[]) => {
+  console.log(msg);
+};
+
+showCommit('commit3', 'commit4');
